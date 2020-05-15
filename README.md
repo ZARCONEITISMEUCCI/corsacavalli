@@ -6,4 +6,4 @@ Esercizio finale TPSIT Itis Meucci Firenze
 #Ogni cavallo viene fatto avanzare utilizzando un thread.
 #Quando il primo cavallo raggiunge il traguardo l'interfaccia riporta il numero di corsia del cavallo vincente.
 #
-#Consegna: documentazione contenente diagramma delle classi, repository git con il codice commentato e con tutti i javadoc
+Consegna: documentazione contenente diagramma delle classi, repository git con il codice commentato e con tutti i javadoc
