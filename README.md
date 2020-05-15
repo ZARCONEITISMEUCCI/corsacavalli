@@ -1,5 +1,5 @@
 # corsacavalli
-#Esercizio finale TPSIT Itis Meucci Firenze
+Esercizio finale TPSIT Itis Meucci Firenze
 #Utilizzando le swing realizzare un'applicazione che visualizzi all'interno dell'interfaccia una corsa di cavalli.
 #L'interfaccia all'avvio chiede il numero di cavalli che si vuole far correre. Questo numero rappresenta il numero di corsie (maggiore uguale a 2, minore uguale a 10).
 #Dopodiché disegnerà il numero di corsie scelto con all'interno i rispettivi cavalli e attraverso un tasto farà partire la gara.
