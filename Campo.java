@@ -1,11 +1,17 @@
 package corsacavalli;
 
 import java.awt.Color;
+
 import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
 
 import javax.swing.JPanel;
 
-public class Campo extends JPanel {
+//Costruzione del percorso di gara
+
+public class Campo extends JPanel{
+	
 	public void paint(Graphics g) {
 		g.setColor(Color.lightGray);
 		g.fillRect(0, 0, 1000, 645);

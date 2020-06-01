@@ -11,6 +11,8 @@ public class Cavallo extends JPanel {
 	int coordx;
 	int coordy;
 	Image img;
+	
+	//Organizzazione dei cavalli (Un cavallo differente per ogni corsia)
 
 	public Cavallo(int yy, int xx) {
 		coordx = 0;

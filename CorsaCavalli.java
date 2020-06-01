@@ -20,6 +20,7 @@ public class CorsaCavalli extends JFrame {
 	Image buffer_virtuale;
 	int n=0;
 	
+	//organizzazione gara, creazione del percorso.
 	public CorsaCavalli(int scelta) {
 		super("Corsa Cavalli");
 		n=scelta;
@@ -37,7 +38,7 @@ public class CorsaCavalli extends JFrame {
 			thread_partecipanti[xx] = new CavalliInCorsa(partecipanti[xx], this);
 			partenza = partenza+100;			
 		}
-		// visualizza la gara
+		// visualizza la corsa
 		this.add(pista);
 		setVisible(true);
 	}
@@ -46,6 +47,7 @@ public class CorsaCavalli extends JFrame {
 		return posizione++;
 	}
 	
+	//"fototraguardo"
 	public synchronized void controllaArrivi() {
 		boolean arrivati=true;
 		for (int xx=0; xx<n; xx++) {
@@ -58,10 +60,12 @@ public class CorsaCavalli extends JFrame {
 		}
 	}
 	
+	//Visualizzazione della classifica di gara
+	
 	public void visualizzaClassifica() {
 		JLabel[] arrivi;
 		arrivi = new JLabel[n];
-		JFrame classifica = new JFrame("Classifica Cavalli");
+		JFrame classifica = new JFrame("Classifica Concorrenti");
 		classifica.setSize(500, 500);
 		classifica.setLocation(280, 130);
 		classifica.setBackground(Color.BLUE);
@@ -70,6 +74,7 @@ public class CorsaCavalli extends JFrame {
 		
 		for(int xx=1; xx<7; xx++) {
 			for (int yy=0; yy<n; yy++) {
+				//parte della grafica della classifica
 				if (thread_partecipanti[yy].posizione==xx){
 					arrivi[yy]=new JLabel(xx+"' Classificato in gara " + (yy+1)+"' corsia");
 					arrivi[yy].setFont(new Font("arial", Font.BOLD, 18));
@@ -104,6 +109,7 @@ public class CorsaCavalli extends JFrame {
 	public static void main(String[] a) {
 		Scanner d = new Scanner(System.in);
 		int scelta=0;
+		//scelta del numero di partecipanti
 		System.out.println("inserisci il numero di cavalli");
 		do {
 			scelta = d.nextInt();
